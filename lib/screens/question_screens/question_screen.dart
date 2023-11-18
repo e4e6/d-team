@@ -15,9 +15,11 @@ class QuestionScreen extends StatefulWidget {
 class _QuestionScreenState extends State<QuestionScreen> {
   @override
   Widget build(BuildContext _) {
+
     final questionControllerWatch = _.watch<QuestionController>();
     final questionControllerRead = _.read<QuestionController>();
-
+    print('questionScreenState');
+    print(questionControllerWatch.questionBundleList);
     return Scaffold(
       backgroundColor: Constant.backgroundColorf2f2f2,
       body: Column(

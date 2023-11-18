@@ -85,9 +85,11 @@ class _MentalTestScreenState extends State<MentalTestScreen> {
                               .mentalTestItemList[testIndex].numberOfQuestions
                               .toString(),
                           onTap: () {
-                            testSelectionControllerRead.setIndex(testIndex);
                             final questionControllerRead = context.read<QuestionController>();
+                            questionControllerRead.setQuestionBundleList(testSelectionControllerRead.mentalTestItemList[testIndex].questionBundleList);
+                            testSelectionControllerRead.setIndex(testIndex);
                             questionControllerRead.ChangeQuestionBundleListandIndexToInitialState(context);
+                            questionControllerRead.setQuestionBundleList(testSelectionControllerRead.mentalTestItemList[testIndex].questionBundleList);
                             Navigator.push(context, MaterialPageRoute(
                                 builder: (context) => QuestionScreen()),);
                           }),

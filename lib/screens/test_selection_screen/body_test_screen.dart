@@ -63,7 +63,7 @@ class _BodyTestScreenState extends State<BodyTestScreen> {
 
               ListView.builder(
                   shrinkWrap: true,
-                  itemCount: testSelectionControllerRead.mentalTestItemList.length,
+                  itemCount: testSelectionControllerRead.bodyTestItemList.length,
                   itemBuilder: (BuildContext _, int testIndex) {
                     return Column(
                       children: [
@@ -71,23 +71,25 @@ class _BodyTestScreenState extends State<BodyTestScreen> {
                         SingleTestWidget(
                             index: testIndex,
                             testSelectionItem: testSelectionControllerRead
-                                .mentalTestItemList[testIndex],
+                                .bodyTestItemList[testIndex],
                             imagePath: testSelectionControllerRead
-                                .mentalTestItemList[testIndex].imagePath,
+                                .bodyTestItemList[testIndex].imagePath,
                             boxWidth: 320,
                             boxHeight: 140,
                             title: testSelectionControllerRead
-                                .mentalTestItemList[testIndex].questionTitle,
+                                .bodyTestItemList[testIndex].questionTitle,
                             duration: testSelectionControllerRead
-                                .mentalTestItemList[testIndex]
+                                .bodyTestItemList[testIndex]
                                 .expectedTimeInMinutes.toString(),
                             questionCount: testSelectionControllerRead
-                                .mentalTestItemList[testIndex].numberOfQuestions
+                                .bodyTestItemList[testIndex].numberOfQuestions
                                 .toString(),
                             onTap: () {
-                              testSelectionControllerRead.setIndex(testIndex);
                               final questionControllerRead = context.read<QuestionController>();
+                              questionControllerRead.setQuestionBundleList(testSelectionControllerRead.bodyTestItemList[testIndex].questionBundleList);
+                              testSelectionControllerRead.setIndex(testIndex);
                               questionControllerRead.ChangeQuestionBundleListandIndexToInitialState(context);
+                              questionControllerRead.setQuestionBundleList(testSelectionControllerRead.bodyTestItemList[testIndex].questionBundleList);
                               Navigator.push(context, MaterialPageRoute(
                                   builder: (context) => QuestionScreen()),);
                             }),

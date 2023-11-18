@@ -151,7 +151,7 @@ class _$QuestionBundleItemImpl implements _QuestionBundleItem {
       required final List<QuestionItem> questionList,
       this.isMultipleSelectionsAllowed = false,
       this.initialScore = 0.0,
-      this.imagePath = "[question_bundle_item:]이미지 주소 추가 필요"})
+      this.imagePath = "assets/image/question_mark.png"})
       : _questionList = questionList;
 
   @override

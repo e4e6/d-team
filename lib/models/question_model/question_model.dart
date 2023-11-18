@@ -538,4 +538,320 @@ class QuestionModel{
       ],
     ),
   ];
+  List<QuestionBundleItem> empathyQuestionBundleList = [
+    QuestionBundleItem(
+      questionTitle: 'Q1. 더 좋아하는 영화는 ',
+      isMultipleSelectionsAllowed: false,
+      initialScore: 50,
+      questionList: [
+        QuestionItem(
+          questionText:'1. 마음을 움직이는 영화',
+          score: 6,
+        ),
+        QuestionItem(
+          questionText: '2. 뇌를 자극하는 영화',
+          score: -5,
+        )
+      ],
+    ),
+    QuestionBundleItem(
+      questionTitle: 'Q2. 예상치 못한 상황이 벌어진다면',
+      isMultipleSelectionsAllowed: false,
+      initialScore: 0,
+      questionList: [
+        QuestionItem(
+          questionText:'1. 생각을 잠시 멈추고 플랜 ABCD를 생각한다.',
+          score: -4,
+        ),
+        QuestionItem(
+          questionText: '2. 생각나는 것 부터 하나하나 시도한다.',
+          score: 5,
+        )
+      ],
+    ),
+    QuestionBundleItem(
+      questionTitle: 'Q3. 어느 날, 갑자기 인간의 감정이 삭제되었다. 감정을 느낄 수 없는 세상이 온다면 나는',
+      isMultipleSelectionsAllowed: false,
+      initialScore: 0,
+      questionList: [
+        QuestionItem(
+          questionText:'1. 감정 때문에 피곤하지도 않고 오히려 좋은 것 아닌가?',
+          score: -7,
+        ),
+        QuestionItem(
+          questionText: '2. 안돼.. 감정을 느낄 수 없으면 너무 삭막하잖아...',
+          score: 5,
+        )
+      ],
+    ),
+    QuestionBundleItem(
+      questionTitle: 'Q4. 시험을 망쳤을 때 더 위로되는 말은',
+      isMultipleSelectionsAllowed: false,
+      initialScore: 0,
+      questionList: [
+        QuestionItem(
+          questionText:'1. 야 나도 망했어 ㅠㅠ 이번에 진짜 어려웠어',
+          score: 3,
+        ),
+        QuestionItem(
+          questionText: '2. 이번 시험이 어려웠네, 너 원래 잘하잖아!',
+          score: -1,
+        )
+      ],
+    ),
+    QuestionBundleItem(
+      questionTitle: 'Q5. 지갑을 잃어버렸을 때 나는',
+      isMultipleSelectionsAllowed: false,
+      initialScore: 0,
+      questionList: [
+        QuestionItem(
+          questionText:'1. 지갑 속 가족, 친구들과 찍은 사진이 없어져서 슬프다',
+          score: 5,
+        ),
+        QuestionItem(
+          questionText: '2. 민증, 카드 등 재발급을 받아야 할 일이 피곤하다.',
+          score: -4,
+        )
+      ],
+    ),
+    QuestionBundleItem(
+      questionTitle: 'Q6. 학창 시절, 내가 더 잘 풀었던 문제는',
+      isMultipleSelectionsAllowed: false,
+      initialScore: 0,
+      questionList: [
+        QuestionItem(
+          questionText:'1. 화자의 의도를 파악하시오.',
+          score: 4,
+        ),
+        QuestionItem(
+          questionText: '2. 인수분해를 이용하여 다음을 계산하시오.',
+          score: -3,
+        )
+      ],
+    ),
+    QuestionBundleItem(
+      questionTitle: 'Q7. 시험을 망쳤을 때 더 위로되는 말은',
+      isMultipleSelectionsAllowed: false,
+      initialScore: 0,
+      questionList: [
+        QuestionItem(
+          questionText:'1. 야 나도 망했어 ㅠㅠ 이번에 진짜 어려웠어.',
+          score: 3,
+        ),
+        QuestionItem(
+          questionText: '2. 이번 시험이 어려웠네, 너 원래 잘하잖아!',
+          score: -2,
+        )
+      ],
+    ),
+    QuestionBundleItem(
+      questionTitle: 'Q8. 힘들 때, 나에게 더 힘이 되어주는 친구는?',
+      isMultipleSelectionsAllowed: false,
+      initialScore: 0,
+      questionList: [
+        QuestionItem(
+          questionText:'1. 위로와 격려를 해주는 친구',
+          score: 4,
+        ),
+        QuestionItem(
+          questionText: '2. 조언과 방향성을 제시해주는 친구',
+          score: -3,
+        )
+      ],
+    ),
+    QuestionBundleItem(
+      questionTitle: 'Q9. 내 생각 흐름의 종착지는?',
+      isMultipleSelectionsAllowed: false,
+      initialScore: 0,
+      questionList: [
+        QuestionItem(
+          questionText:'1. ? 물음표인 경우가 많다.',
+          score: 0,
+        ),
+        QuestionItem(
+          questionText: '2. ! 느낌표인 경우가 많다.',
+          score: 0,
+        )
+      ],
+    ),
+    QuestionBundleItem(
+      questionTitle: 'Q10. 남들이 보는 나는?',
+      isMultipleSelectionsAllowed: false,
+      initialScore: 0,
+      questionList: [
+        QuestionItem(
+          questionText:'1. 강인하고 공정한 사람',
+          score: -4,
+        ),
+        QuestionItem(
+          questionText: '2. 온화하고 상냥한 사람',
+          score:5,
+        )
+      ],
+    ),
+    QuestionBundleItem(
+      questionTitle: 'Q11. 인스타 스토리 DM은',
+      isMultipleSelectionsAllowed: false,
+      initialScore: 0,
+      questionList: [
+        QuestionItem(
+          questionText:'1. 팔로우 된 관계라면 누구에게든 보낼 수 있다.',
+          score:3,
+        ),
+        QuestionItem(
+          questionText: '2. 진짜 친한 사람한테만 보낼 수 있다.',
+          score: -2,
+        )
+      ],
+    ),
+    QuestionBundleItem(
+      questionTitle: 'Q12. 친구가 연애 상담을 한다면',
+      isMultipleSelectionsAllowed: false,
+      initialScore: 0,
+      questionList: [
+        QuestionItem(
+          questionText:'1. 마음은 이해되는데,, 어떻게 위로해야할지 모르겠다.',
+          score: -4,
+        ),
+        QuestionItem(
+          questionText: '2. 그 맘 잘 알지,,  친구한테 이입하다보니 눈물이 고인다.',
+          score: 5,
+        )
+      ],
+    ),
+  ];
+  List<QuestionBundleItem> redGreenColorQuestionBundleList = [
+    QuestionBundleItem(
+      questionTitle: 'Q1.어떤 숫자가 보이는지 고르시오. ',
+      isMultipleSelectionsAllowed: false,
+      imagePath: 'assets/image/15.png',
+      initialScore: 0,
+      questionList: [
+        QuestionItem(
+          questionText:'17',  //적녹색약
+          score: 10000,
+        ),
+        QuestionItem(
+          questionText:'숫자가 없음', //적녹색맹
+          score: 1000,
+        ),
+        QuestionItem(
+          questionText: '15', //정상
+          score: 0,
+        )
+      ],
+    ),
+    QuestionBundleItem(
+      questionTitle: 'Q2.어떤 숫자가 보이는지 고르시오.',
+      isMultipleSelectionsAllowed: false,
+      imagePath: 'assets/image/74.png',
+      initialScore: 0,
+      questionList: [
+        QuestionItem(
+          questionText:'74',  //정상
+          score: 0,
+        ),
+        QuestionItem(
+          questionText:'숫자가 없음',  //전색맹자
+          score: 1,
+        ),
+        QuestionItem(
+          questionText: '21', //적녹생맹
+          score: 1000,
+        )
+      ],
+    ),
+    QuestionBundleItem(
+      questionTitle: 'Q3.어떤 숫자가 보이는지 고르시오.',
+      isMultipleSelectionsAllowed: false,
+      imagePath: 'assets/image/8.png',
+      initialScore: 0,
+      questionList: [
+        QuestionItem(
+          questionText:'8',  //정상
+          score: 0,
+        ),
+        QuestionItem(
+          questionText: '숫자가 없음',  //적녹색맹
+          score: 1000,
+        ),
+        QuestionItem(
+          questionText:'3',  //적녹색약
+          score: 10000,
+        ),
+      ],
+    ),
+    QuestionBundleItem(
+      questionTitle: 'Q4.어떤 숫자가 보이는지 고르시오.',
+      isMultipleSelectionsAllowed: false,
+      imagePath: 'assets/image/97.png',
+      initialScore: 0,
+      questionList: [
+        QuestionItem(
+          questionText:'숫자가 없음', //색각이상
+          score: 100,
+        ),
+        QuestionItem(
+          questionText: '97',  //정상
+          score: 0,
+        )
+      ],
+    ),
+    QuestionBundleItem(
+      questionTitle: 'Q5.어떤 숫자가 보이는지 고르시오.',
+      isMultipleSelectionsAllowed: false,
+      imagePath: 'assets/image/12.png',
+      initialScore: 0,
+      questionList: [
+        QuestionItem(
+          questionText:'12', //정상인 혹은 색각 이상자
+          score: 0,
+        ),
+        QuestionItem(
+          questionText: '그 외 아무 숫자',  //이게 나오면 안됨..
+          score: -3,
+        )
+      ],
+    ),
+    QuestionBundleItem(
+      questionTitle: 'Q6.어떤 숫자가 보이는지 고르시오.',
+      isMultipleSelectionsAllowed: false,
+      imagePath: 'assets/image/26.png',
+      initialScore: 0,
+      questionList: [
+        QuestionItem(
+          questionText:'6', //적녹색맹
+          score: 1000,
+        ),
+        QuestionItem(
+          questionText:'2', //적녹색맹
+          score: 1000,
+        ),
+        QuestionItem(
+          questionText: '26', //정상
+          score: 0,
+        )
+      ],
+    ),
+    QuestionBundleItem(
+      questionTitle: 'Q7.어떤 숫자가 보이는지 고르시오.',
+      isMultipleSelectionsAllowed: false,
+      imagePath: 'assets/image/5.png',
+      initialScore: 0,
+      questionList: [
+        QuestionItem(
+          questionText:'숫자가 없음',  //전색맹자
+          score: 1,
+        ),
+        QuestionItem(
+          questionText:'5', //정상
+          score: 0,
+        ),
+        QuestionItem(
+          questionText: '2',  //적녹색맹
+          score: 1000,
+        )
+      ],
+    ),
+  ];
 }

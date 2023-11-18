@@ -29,5 +29,58 @@ class ResultModel{
         resultRating: 2.0
     ),
   ];
-
+  List<ResultItem> empathyResultItems = [
+    ResultItem(
+        resultText: "당신의 공감 수치는 %%점입니다.\n모든 사람에게 따뜻한 당신은 핫팩! ",
+        imagePath: 'assets/image/result_-2.png', //핫팩 이미지
+        resultRating: 84
+    ),
+    ResultItem(
+        resultText: "당신의 공감 수치는 %%점입니다.\n 따뜻하면서 가끔은 딱딱한 당신은 군밤!",
+        imagePath: 'assets/image/result_-1.png',
+        resultRating: 62
+    ),
+    ResultItem(
+        resultText: "당신의 공감 수치는 %%점입니다.\n 차갑기도 하고 따뜻하기도한 당신은 추위 속 군고구마!",
+        imagePath: 'assets/image/result_0.png',
+        resultRating: 48
+    ),
+    ResultItem(
+        resultText: "당신의 공감 수치는 %%점입니다.\n 따뜻함과 차가움이 공존하는 당신은 샤베트",
+        imagePath: 'assets/image/result_1.png',
+        resultRating: 36
+    ),
+    ResultItem(
+        resultText: "당신의 공감 수치는 %%점입니다.\n 언제 어디서나 차가운 당신은 얼죽아!",
+        imagePath: 'assets/image/result_1.png',
+        resultRating: 36
+    ),
+  ];
+  List<ResultItem> redGreenColorResultItems = [
+    ResultItem(
+        resultText: "적녹 색약자",
+        imagePath: 'assets/image/result_-2.png',
+        resultRating: 20000 // 20000점 이상
+    ),
+    ResultItem(
+        resultText: "적녹색맹",
+        imagePath: 'assets/image/result_-1.png',
+        resultRating: 2000 // 2000점 이상 8000점 이하
+    ),
+    ResultItem(
+        resultText: "색각이상",
+        imagePath: 'assets/image/result_0.png',
+        resultRating: 100 // 100점 이상 800점 이하
+    ),
+    ResultItem(
+        resultText: "전색맹자",
+        imagePath: 'assets/image/result_1.png',
+        resultRating: 1 // 1점 이상 8점 이하
+    ),
+    ResultItem(
+        resultText: "정상",
+        imagePath: 'assets/image/result_1.png',
+        resultRating: 0 // 정상
+    ),
+  ];
 }

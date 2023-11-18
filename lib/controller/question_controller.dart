@@ -14,12 +14,19 @@ class QuestionController with ChangeNotifier{
   int questionBundleListIndex = 0;
 
   // List<QuestionBundleItem> questionBundleList = TestSelectionModel().testSelectionItemList[1].questionBundleList;
-  List<QuestionBundleItem> questionBundleList = TestSelectionModel().testSelectionItemList[TestSelectionController().getIndex()].questionBundleList;
+  List<QuestionBundleItem> questionBundleList = TestSelectionModel().mentalTestList[TestSelectionController().getIndex()].questionBundleList;
 
   void ChangeQuestionBundleListandIndexToInitialState(BuildContext _){
     final testSelectionControllerRead = _.read<TestSelectionController>();
-    questionBundleList = TestSelectionModel().testSelectionItemList[testSelectionControllerRead.presentQuestionBundelIndex].questionBundleList;
+    questionBundleList = TestSelectionModel().mentalTestList[testSelectionControllerRead.presentQuestionBundelIndex].questionBundleList;
     questionBundleListIndex = 0;
+    notifyListeners();
+  }
+
+  void  setQuestionBundleList(List<QuestionBundleItem> lastQuestionBundleList){
+    questionBundleList = lastQuestionBundleList;
+    print('safsaf');
+    print(questionBundleList);
     notifyListeners();
   }
 

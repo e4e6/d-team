@@ -10,6 +10,6 @@ class QuestionBundleItem with _$QuestionBundleItem {
         required List<QuestionItem> questionList,
         @Default(false) bool isMultipleSelectionsAllowed,
         @Default(0.0) double initialScore,
-        @Default("[question_bundle_item:]이미지 주소 추가 필요") String imagePath,
+        @Default("assets/image/question_mark.png") String imagePath,
       }) = _QuestionBundleItem;
 }
