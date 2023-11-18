@@ -19,7 +19,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
     final questionControllerRead = _.read<QuestionController>();
 
     return Scaffold(
-      backgroundColor: Constant.backgroundColor,
+      backgroundColor: Constant.backgroundColorf2f2f2,
       body: Column(
         children: [
           SizedBox(
