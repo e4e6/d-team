@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:team_d/config/constant.dart';
 import 'package:team_d/controller/question_controller.dart';
+import 'package:team_d/screens/setting_screen/setting_screen.dart';
 import 'package:team_d/screens/test_selection_screen/body_test_screen.dart';
 import 'package:team_d/screens/test_selection_screen/mental_test_screen.dart';
 
@@ -121,9 +122,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
         ],
       ),
-            Center(
-              child: Text("apps"),
-            ),
+            SettingScreen(),
           ],
         ),
         extendBodyBehindAppBar: true,

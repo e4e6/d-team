@@ -18,6 +18,8 @@ final _privateConstructorUsedError = UnsupportedError(
 mixin _$ResultItem {
   String get resultText => throw _privateConstructorUsedError;
   double get resultRating => throw _privateConstructorUsedError;
+  double get minRating => throw _privateConstructorUsedError;
+  double get maxRating => throw _privateConstructorUsedError;
   String get imagePath => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
@@ -31,7 +33,12 @@ abstract class $ResultItemCopyWith<$Res> {
           ResultItem value, $Res Function(ResultItem) then) =
       _$ResultItemCopyWithImpl<$Res, ResultItem>;
   @useResult
-  $Res call({String resultText, double resultRating, String imagePath});
+  $Res call(
+      {String resultText,
+      double resultRating,
+      double minRating,
+      double maxRating,
+      String imagePath});
 }
 
 /// @nodoc
@@ -49,6 +56,8 @@ class _$ResultItemCopyWithImpl<$Res, $Val extends ResultItem>
   $Res call({
     Object? resultText = null,
     Object? resultRating = null,
+    Object? minRating = null,
+    Object? maxRating = null,
     Object? imagePath = null,
   }) {
     return _then(_value.copyWith(
@@ -59,6 +68,14 @@ class _$ResultItemCopyWithImpl<$Res, $Val extends ResultItem>
       resultRating: null == resultRating
           ? _value.resultRating
           : resultRating // ignore: cast_nullable_to_non_nullable
+              as double,
+      minRating: null == minRating
+          ? _value.minRating
+          : minRating // ignore: cast_nullable_to_non_nullable
+              as double,
+      maxRating: null == maxRating
+          ? _value.maxRating
+          : maxRating // ignore: cast_nullable_to_non_nullable
               as double,
       imagePath: null == imagePath
           ? _value.imagePath
@@ -76,7 +93,12 @@ abstract class _$$ResultItemImplCopyWith<$Res>
       __$$ResultItemImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String resultText, double resultRating, String imagePath});
+  $Res call(
+      {String resultText,
+      double resultRating,
+      double minRating,
+      double maxRating,
+      String imagePath});
 }
 
 /// @nodoc
@@ -92,6 +114,8 @@ class __$$ResultItemImplCopyWithImpl<$Res>
   $Res call({
     Object? resultText = null,
     Object? resultRating = null,
+    Object? minRating = null,
+    Object? maxRating = null,
     Object? imagePath = null,
   }) {
     return _then(_$ResultItemImpl(
@@ -102,6 +126,14 @@ class __$$ResultItemImplCopyWithImpl<$Res>
       resultRating: null == resultRating
           ? _value.resultRating
           : resultRating // ignore: cast_nullable_to_non_nullable
+              as double,
+      minRating: null == minRating
+          ? _value.minRating
+          : minRating // ignore: cast_nullable_to_non_nullable
+              as double,
+      maxRating: null == maxRating
+          ? _value.maxRating
+          : maxRating // ignore: cast_nullable_to_non_nullable
               as double,
       imagePath: null == imagePath
           ? _value.imagePath
@@ -117,6 +149,8 @@ class _$ResultItemImpl implements _ResultItem {
   _$ResultItemImpl(
       {this.resultText = "[result_item:]결과 내용 추가 필요",
       this.resultRating = 0.0,
+      this.minRating = -50000.0,
+      this.maxRating = 50000.0,
       this.imagePath = "[result_item:]이미지 주소 추가 필요"});
 
   @override
@@ -127,11 +161,17 @@ class _$ResultItemImpl implements _ResultItem {
   final double resultRating;
   @override
   @JsonKey()
+  final double minRating;
+  @override
+  @JsonKey()
+  final double maxRating;
+  @override
+  @JsonKey()
   final String imagePath;
 
   @override
   String toString() {
-    return 'ResultItem(resultText: $resultText, resultRating: $resultRating, imagePath: $imagePath)';
+    return 'ResultItem(resultText: $resultText, resultRating: $resultRating, minRating: $minRating, maxRating: $maxRating, imagePath: $imagePath)';
   }
 
   @override
@@ -143,13 +183,17 @@ class _$ResultItemImpl implements _ResultItem {
                 other.resultText == resultText) &&
             (identical(other.resultRating, resultRating) ||
                 other.resultRating == resultRating) &&
+            (identical(other.minRating, minRating) ||
+                other.minRating == minRating) &&
+            (identical(other.maxRating, maxRating) ||
+                other.maxRating == maxRating) &&
             (identical(other.imagePath, imagePath) ||
                 other.imagePath == imagePath));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, resultText, resultRating, imagePath);
+  int get hashCode => Object.hash(
+      runtimeType, resultText, resultRating, minRating, maxRating, imagePath);
 
   @JsonKey(ignore: true)
   @override
@@ -162,12 +206,18 @@ abstract class _ResultItem implements ResultItem {
   factory _ResultItem(
       {final String resultText,
       final double resultRating,
+      final double minRating,
+      final double maxRating,
       final String imagePath}) = _$ResultItemImpl;
 
   @override
   String get resultText;
   @override
   double get resultRating;
+  @override
+  double get minRating;
+  @override
+  double get maxRating;
   @override
   String get imagePath;
   @override

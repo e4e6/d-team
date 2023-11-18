@@ -33,8 +33,6 @@ class _ResultScreenState extends State<ResultScreen> {
             ResultTextWidget(age: resultControllerRead.score,
                 explanation: resultControllerRead.resultList[resultControllerRead.index].resultText),
             SizedBox(height: sizedBoxHeightLow,),
-
-            ReStartButton(width: 300, height: 80, text: '다시 검사하기'),
           ],
         ),
       )

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:team_d/controller/question_controller.dart';
+import 'package:team_d/controller/result_controller.dart';
 import 'package:team_d/controller/test_selection_controller.dart';
+import 'package:team_d/models/result_model/result_model.dart';
 import 'package:team_d/screens/question_screens/question_screen.dart';
 import 'package:team_d/screens/test_selection_screen/widgets/single_test_widget.dart';
 
@@ -86,6 +88,7 @@ class _BodyTestScreenState extends State<BodyTestScreen> {
                                 .toString(),
                             onTap: () {
                               final questionControllerRead = context.read<QuestionController>();
+                              final resultControllerRead = context.read<ResultController>();
                               questionControllerRead.setQuestionBundleList(testSelectionControllerRead.bodyTestItemList[testIndex].questionBundleList);
                               testSelectionControllerRead.setIndex(testIndex);
                               questionControllerRead.ChangeQuestionBundleListandIndexToInitialState(context);

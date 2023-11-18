@@ -23,12 +23,8 @@ class ResultController with ChangeNotifier{
   }
 
   void setIndex({required double score}){
-    if(score >= 15 ) index = 0;
-    if(score >= 5 && score<15) index = 1;
-    if(score >= -3 && score<5) index = 2;
-    if(score >= -7 && score<-3) index = 3;
-    if(score<-7) index = 4;
+    for (int i=0; i<resultList.length;i++ )
+      if(score >= resultList[i].maxRating&& score<resultList[i].minRating ) index = i;
     notifyListeners();
   }
-
 }

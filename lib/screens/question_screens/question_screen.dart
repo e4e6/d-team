@@ -18,8 +18,6 @@ class _QuestionScreenState extends State<QuestionScreen> {
 
     final questionControllerWatch = _.watch<QuestionController>();
     final questionControllerRead = _.read<QuestionController>();
-    print('questionScreenState');
-    print(questionControllerWatch.questionBundleList);
     return Scaffold(
       backgroundColor: Constant.backgroundColorf2f2f2,
       body: Column(
@@ -79,8 +77,10 @@ class _QuestionScreenState extends State<QuestionScreen> {
               SizedBox(width: 80,),
               ElevatedButton(
                   onPressed: () {
-                    if(questionControllerWatch.questionBundleListIndex == questionControllerWatch.questionBundleList.length-1)
+                    if(questionControllerWatch.questionBundleListIndex == questionControllerWatch.questionBundleList.length-1){
                       questionControllerWatch.openResultScreen(context);
+
+                    }
                     questionControllerWatch.changeToNextQuestionBundle();
                   },
                   child: Text(

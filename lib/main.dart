@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:team_d/controller/profile_selection_controller.dart';
+import 'package:team_d/controller/setting_controller.dart';
 import 'package:team_d/controller/test_selection_controller.dart';
 import 'package:team_d/screens/home_screen.dart';
 
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       ChangeNotifierProvider(create: (_) => QuestionController()),
       ChangeNotifierProvider(create: (_) => ResultController()),
       ChangeNotifierProvider(create: (_) => TestSelectionController()),
-      ChangeNotifierProvider(create: (_) => ProfileSelectionController()),
+      ChangeNotifierProvider(create: (_) => SettingController()),
     ],
       child:MaterialApp(
         debugShowCheckedModeBanner: false,

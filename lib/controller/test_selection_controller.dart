@@ -8,13 +8,11 @@ class TestSelectionController with ChangeNotifier {
   int presentQuestionBundelIndex = 0;
 
   void setIndex (int index){
-    print('set');
     presentQuestionBundelIndex = index;
     print(presentQuestionBundelIndex);
     notifyListeners();
   }
   int getIndex (){
-    print('get');
     print(presentQuestionBundelIndex);
     return presentQuestionBundelIndex;
   }

@@ -7,6 +7,8 @@ class ResultItem with _$ResultItem {
   factory ResultItem(
       {@Default("[result_item:]결과 내용 추가 필요") String resultText,
         @Default(0.0) double resultRating,
+        @Default(-50000.0) double minRating,
+        @Default(50000.0) double maxRating,
         @Default("[result_item:]이미지 주소 추가 필요") String imagePath,
       }) = _ResultItem;
 }

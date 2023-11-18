@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 
 class Constant{
@@ -7,6 +8,7 @@ class Constant{
   static const Color textColor2 = Color(0XFF9BB3C0);
   static const Color facebookColor = Color(0xFF3B5999);
   static const Color maxWhite = Color(0xFFFFFFFF);
+  static const Color maxBlack = Color(0x00000000);
   static const Color orange = Color(0xFFFFA41B);
   static const Color backgroundColorf2f2f2 = Color(0xffF2F2F2);
   static const double  mainGap = 22;
@@ -16,4 +18,5 @@ class Constant{
   static const double topPadding = 100.0;
   static const double bottomPadding = 110.0;
   static const double mainFontSize = 25.0;
+  static const double smallFontSize = 16.0;
 }
